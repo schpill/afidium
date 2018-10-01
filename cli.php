@@ -81,7 +81,7 @@ class Bonotel
             $row['preferred'] = static::contains($description, 'preferred')
                 || static::hasFacilityOrHasRecreation($recreation, $facilities, 'preferred');
             $row['wedding'] = static::contains($description, 'wedding')
-                || static::hasFacilityOrHasRecreation($recreation, $facilities, 'golf');
+                || static::hasFacilityOrHasRecreation($recreation, $facilities, 'wedding');
 
             $row['distribution']['BONOTEL'] = $code;
 
